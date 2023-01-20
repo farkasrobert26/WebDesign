@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    widows: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+.nav-links ul li:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box{
+    font-size: 42px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:#fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    
+}
+
+nav .fa{
+display: none;
+}
+
+@media(max-width:700px){
+    .text-box h{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background:#f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+}
+    h12{
+        color: white;
+    }
+form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+}
+/*------ About ------*/ 
+    #About{
+        
+        background-size: 100% 100%;
+        width: 80%;
+        margin:auto;
+        text-align: center;
+        padding-top:100 px;
+    }
+h1{
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+}
+p1{
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height:  22px;
+    padding: 10px;
+}
+
+/*------ Rooms ------*/ 
+    #Rooms{
+     
+        width: 80%;
+        margin:auto;
+        text-align: center;
+        padding-top:100 px;
+    }
+h1{
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height:  22px;
+    padding: 10px;
+}
+.carousel-item {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+#check-in-section{
+    background-image: url(images/ISLAND.jpg);
+  background-size: cover;
+    width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px;
+  color: white;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #f44336;
+}
+.separator1 {
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+}
+.Twin-Room{
+  width: 60%;
+  height: auto;
+}
+.Standard-Room{
+  width: 60%;
+  height: auto;
+}
+div1 {
+  display: flex;
+}
+
+figure {
+  flex: 1;
+}
+
+/*------ Restaurant ------*/ 
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#Restaurant{
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.restaurant-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.restaurant-col img{
+    width: 100%;
+    border-radius:  10px;
+}
+.restaurant-col p1{
+    padding: 0;
+    
+}
+.restaurant-col h1{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+#menu {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#menu h2 {
+  text-align: center;
+}
+
+#menu ul {
+background-image:url(images/MENU.JPG);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*------ Gallery ------*/ 
+#Gallery{
+      background: linear-gradient(to bottom, #380036, 
+#0CBABA);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+}
+#carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel-inner {
+  width: 40%;
+  height: auto;
+  display: flex;
+  padding: 20px;
+}
+
+#carousel-inner img {
+  width: 40%;
+  height: auto;
+  flex: 1;
+  padding: 20px;
+}
+/*------ Contact ------*/ 
+#Contact{
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.cta{
+    margin: 100px auto;
+    widows: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/CONTACT.JPG);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*------ Footer ------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-copyright{
+    color: #f44336;
+}
